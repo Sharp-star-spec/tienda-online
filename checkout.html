@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Finalizar Compra</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Navegación -->
+  <header class="navbar">
+    <h1>Finalizar Compra</h1>
+    <nav>
+      <a href="tienda.html">Inicio</a>
+      <a href="camisas.html">Camisas</a>
+      <a href="favoritos.html">Favoritos ❤️</a>
+      <a href="carrito.html">Carrito 🛒</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <!-- Resumen y formulario -->
+  <main class="carrito-container">
+    <section class="carrito">
+      <h2>Resumen del pedido</h2>
+      <ul id="resumen-carrito"></ul>
+      <p id="resumen-total">Total: 0 €</p>
+
+      <h2>Datos del comprador</h2>
+      <form id="form-compra" onsubmit="procesarCompra(event)">
+        <input type="text" placeholder="Nombre completo" required />
+        <input type="email" placeholder="Correo electrónico" required />
+        <input type="text" placeholder="Dirección de envío" required />
+        <button type="submit">Confirmar pedido</button>
+      </form>
+
+      <p id="mensaje" style="margin-top: 1rem;"></p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Baljit Singh Kumari. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script>
+    mostrarResumenCheckout();
+  </script>
+</body>
+</html>

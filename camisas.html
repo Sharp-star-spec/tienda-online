@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Camisas - Tienda Online</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <h1>Tienda Online</h1>
+    <nav>
+      <a href="tienda.html">Inicio</a>
+      <a href="camisas.html">Camisas</a>
+      <a href="favoritos.html">Favoritos ❤️</a>
+      <a href="carrito.html">Carrito 🛒</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <!-- Productos de Camisas -->
+  <main>
+    <section class="productos">
+      <!-- Camisa 1 -->
+      <div class="producto">
+        <img src="img/camisa-azul.png" alt="Camisa Azul" />
+        <h2>Camisa Azul</h2>
+        <p>Estilo moderno y elegante para cualquier ocasión.</p>
+        <p><strong>Precio:</strong> 18 €</p>
+     <button onclick="agregarAlCarrito(1)">🛒 Agregar</button>
+     <button onclick="guardarFavorito(1)">❤️ Guardar</button>
+      </div>
+
+      <!-- Camisa 2 -->
+      <div class="producto">
+        <img src="img/camisa-negra.png" alt="Camisa Negra" />
+        <h2>Camisa Negra</h2>
+        <p>Perfecta para programadores en modo dark 🖤</p>
+        <p><strong>Precio:</strong> 20 €</p>
+        <button onclick="agregarAlCarrito(1)">🛒 Agregar</button>
+        <button onclick="guardarFavorito(1)">❤️ Guardar</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Baljit Singh Kumari. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>

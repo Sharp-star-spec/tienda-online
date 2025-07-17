@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Navegación -->
+  <header class="navbar">
+    <h1>Carrito de Compras</h1>
+    <nav>
+      <a href="tienda.html">Inicio</a>
+      <a href="camisas.html">Camisas</a>
+      <a href="favoritos.html">Favoritos ❤️</a>
+      <a href="carrito.html">Carrito 🛒</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <!-- Carrito -->
+  <main class="carrito-container">
+    <section class="carrito" id="carrito">
+      <h2>Productos en tu carrito</h2>
+      <ul id="lista-carrito"></ul>
+      <p id="total">Total: 0 €</p>
+
+      <button onclick="vaciarCarrito()">Vaciar carrito</button>
+      <a href="checkout.html" class="btn">Finalizar compra</a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Baljit Singh Kumari. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+  <script>
+    mostrarCarrito();
+  </script>
+</body>
+</html>

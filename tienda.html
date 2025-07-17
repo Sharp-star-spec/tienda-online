@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tienda Online - Productos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header / Navegación -->
+  <header class="navbar">
+    <h1>Tienda Online</h1>
+    <nav>
+      <a href="tienda.html">Inicio</a>
+      <a href="camisas.html">Camisas</a>
+      <a href="favoritos.html">Favoritos ❤️</a>
+      <a href="carrito.html">Carrito 🛒</a>
+      <a href="checkout.html">Checkout</a>
+    </nav>
+  </header>
+
+  <!-- Productos -->
+  <main>
+    <section class="buscador" style="text-align: center; padding: 1rem;">
+  <input type="text" id="buscador" placeholder="🔍 Buscar producto..." onkeyup="buscarProductos()" />
+</section>
+
+    <section class="productos">
+      <!-- Producto 1 -->
+      <div class="producto">
+        <img src="img/camisetas-frontend.png" alt="Camisetas Frontend" />
+        <h2>Camiseta Frontend</h2>
+        <p>Camiseta con diseño moderno para desarrolladores frontend.</p>
+        <p><strong>Precio:</strong> 15 €</p>
+        <button onclick="agregarAlCarrito(1)">🛒 Agregar</button>
+        <button onclick="guardarFavorito(1)">❤️ Guardar</button>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="producto">
+        <img src="img/taza-js.png" alt="Taza JavaScript" />
+        <h2>Taza JavaScript</h2>
+        <p>Ideal para tu café mientras codificas, con logo de JS.</p>
+        <p><strong>Precio:</strong> 10 €</p>
+        <button onclick="agregarAlCarrito(1)">🛒 Agregar</button>
+        <button onclick="guardarFavorito(1)">❤️ Guardar</button>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="producto">
+        <img src="img/pegatina.png" alt="Pack de Stickers Dev" />
+        <h2>Pack de Stickers Dev</h2>
+        <p>Stickers para personalizar tu laptop o escritorio.</p>
+        <p><strong>Precio:</strong> 5 €</p>
+        <button onclick="agregarAlCarrito(1)">🛒 Agregar</button>
+        <button onclick="guardarFavorito(1)">❤️ Guardar</button>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Baljit Singh Kumari. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
